@@ -42,6 +42,39 @@ Luna is a versatile AI assistant designed to make your life easier by automating
 
 # Setup
 
+# Setup API keys
+
+
+Here are the instructions for setting up the API keys required for Luna:
+
+1. Google Gemini API:
+
+- Visit the Google AI Studio: https://makersuite.google.com/app/apikey
+- Click on Create new API Key.
+- Save your API key securly 
+
+2. News API:
+
+- Create a free account at https://newsapi.org/.
+- Obtain your API key from your account dashboard.
+- Paste your API key in the main.py today news function
+
+3. Weather API:
+
+Obtain a Free API Key:
+
+- Visit OpenWeatherMap: https://openweathermap.org/ and create a free account.
+- Navigate to "API Keys" in your account dashboard and copy your API key.
+
+Add Your API Key to the Code:
+
+- Open the Python code file (Weather.py).
+- Locate the line api_key = "REPLACE WITH YOUR OWN API KEY".
+- Replace the placeholder text with your actual API key.
+
+
+# Clone Luna
+
 1. Install the required libraries:
    ```bash
    pip install pyttsx3 webbrowser datetime pywhatkit smtplib newsapi-python pywhatkit
