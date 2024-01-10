@@ -111,7 +111,7 @@ while True:
         elif "today news" in query.lower():
             engine.say("sir, these are some top headlines of today")
             engine.runAndWait()
-            get_news(api_key='fba484ce7b034a7ba08cbe6e6f8a1b8f', category='general', country='in')
+            get_news(api_key='REPLACE WITH YOUR OWN API KEY', category='general', country='in')
 
         elif "what is my current working directory" in query.lower():
             cwd = get_current_dir()
