@@ -1,2 +1,78 @@
 # Luna: Your Personal AI Assistant
- Luna is a versatile AI assistant designed to make your life easier by automating tasks, providing information, and managing your digital life. She can respond to your voice commands to perform a wide range of actions, including:
+
+# Description
+Luna is a versatile AI assistant designed to make your life easier by automating tasks, providing information, and managing your digital life. She can respond to your voice commands to perform a wide range of actions, including:
+
+- Opening websites and applications
+- Playing music
+- Sending emails
+- Telling the time
+- Providing weather updates
+- Searching the web
+- Getting news headlines
+- Managing files and folders
+- Taking screenshots
+- Automating desktop tasks
+- Sending WhatsApp messages
+- Scheduling tasks
+
+ # Basic Structure
+
+ The code is organized into several modules:
+
+- main.py: The main program file that handles the core functionality and user interaction.
+- process_query.py: Contains functions for processing user queries and generating responses.
+- audio_processing.py: Handles audio input and speech recognition.
+- Weather.py: Retrieves weather information.
+- news.py: Fetches news headlines.
+- os_functions.py: Contains functions for interacting with the operating system (e.g., managing files and folders).
+- AutomateFuctions.py: Provides functions for automating desktop tasks.
+- SendWhatMessage.py: Enables sending WhatsApp messages.
+- scheduler.py: Handles task scheduling.
+
+ # Key Features
+
+- Voice-controlled interface: Interact with Luna using natural language commands.
+- Wide range of functionalities: Perform various tasks, from basic information retrieval to managing your computer.
+- Email capabilities: Compose and send emails, including the option to use AI-generated content.
+- File management: Create, rename, delete, and check files and folders.
+- Desktop automation: Control windows and applications, take screenshots, and more.
+- WhatsApp integration: Send WhatsApp messages directly from Luna.
+- Task scheduling: Set reminders and schedule tasks for Luna to execute at specific times.
+
+# Setup
+
+1. Install the required libraries:
+   ```bash
+   pip install pyttsx3 webbrowser datetime pywhatkit smtplib newsapi-python pywhatkit
+   ```
+ 
+2. Make changes file named dicts.py and define the following variables
+   ```Python
+   sender_email = "your_email@gmail.com"
+   sender_password = "your_email_password"
+   ```
+
+3. Run the main program:
+   ```bash
+   python main.py
+   ```
+
+# Usage
+Speak a command to Luna, such as "Open YouTube" or "What's the weather today?" Luna will process your query and perform the requested action or provide a response.
+
+## Installation
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/GitCoder052023/Luna.git
+   ```
+
+2. Install required libraries
+   ```bash
+   npm install
+   ```
+
+# Note
+**Luna is currently under development, so expect some limitations and potential errors.
+For more information on specific functions or modules, refer to the code documentation within those files**
