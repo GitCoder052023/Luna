@@ -47,19 +47,19 @@ Luna is a versatile AI assistant designed to make your life easier by automating
 
 Here are the instructions for setting up the API keys required for Luna:
 
-1. Google Gemini API:
+1. **Google Gemini API:**
 
 - Visit the Google AI Studio: https://makersuite.google.com/app/apikey
 - Click on Create new API Key.
 - Save your API key securly 
 
-2. News API:
+2. **News API:**
 
 - Create a free account at https://newsapi.org/.
 - Obtain your API key from your account dashboard.
 - Paste your API key in the main.py today news function
 
-3. Weather API:
+3. **Weather API:**
 
 Obtain a Free API Key:
 
@@ -74,6 +74,24 @@ Add Your API Key to the Code:
 - Locate the line api_key = "REPLACE WITH YOUR OWN API KEY".
 - Replace the placeholder text with your actual API key.
 
+**Assembly AI API:**
+
+- Visit the AssemblyAI website at https://www.assemblyai.com/
+- Click on the "Sign Up" button in the top right corner.
+- Enter your email address, password, and other required information.
+- Click on the "Create Account" button.
+
+  
+2. Obtain Your API Key:
+
+- Once you've logged in, you'll be taken to your dashboard.
+- Your API key will be displayed prominently under the "Your API key" section.
+- Click the "copy" icon to copy the key to your clipboard.
+
+3. Add the API Key to Your audio processing.py File:
+
+- Open audio processing.py file.
+- Paste the copied API key into the **REPLACE WITH YOUR OWN ASSEMBLY AI API KEY**.
 
 # Setting up required libraries
 
