@@ -75,7 +75,7 @@ Add Your API Key to the Code:
 - Replace the placeholder text with your actual API key.
 
 
-# Clone Luna
+# Setting up required libraries
 
 1. Install the required libraries:
    ```bash
