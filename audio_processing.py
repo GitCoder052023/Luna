@@ -2,7 +2,7 @@ import speech_recognition as sr
 import os
 import assemblyai as aai
 
-aai.settings.api_key = "ac793426323f452f8414f01a5038d8bf"
+aai.settings.api_key = "REPLACE WITH YOUR OWN ASSEMBLY AI API KEY"
 transcriber = aai.Transcriber()
 
 
