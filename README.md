@@ -63,8 +63,10 @@ Here are the instructions for setting up the API keys required for Luna:
 
 Obtain a Free API Key:
 
-- Visit OpenWeatherMap: https://openweathermap.org/ and create a free account.
-- Navigate to "API Keys" in your account dashboard and copy your API key.
+- Visit the OpenWeatherMap website: https://openweathermap.org/api
+- Create a free account or log in if you already have one.
+- Go to the "API Keys" section in your account settings.
+- Copy your API key.
 
 Add Your API Key to the Code:
 
