@@ -1,7 +1,7 @@
 stop_commands = ["stop", "exit", "quit", "sleep"]
 
-sender_email = "K.alam93899@gmail.com"
-sender_password = "zuqo cirk mcau wbyx"
+sender_email = "YOUR GMAIL ADDRESS"
+sender_password = "YOUR GMAIL APP PASSWORD"
 
 sites = [["YouTube", "https://youtube.com"], ["Google", "https://www.google.com"],
          ["Facebook", "https://www.facebook.com"], ["Instagram", "https://www.instagram.com"],
@@ -14,12 +14,3 @@ songs = [["Dil hai mushkil", "https://youtu.be/6FURuLYrR_Q?si=kkSJFDoutMNPaNEu"]
          ["Nusrat fateh ali khan qauwalli", "https://youtu.be/FIzjqBtb_xo?si=-EOjxGdcld2H6Vkl"],
          ["Yar na miley", "https://youtu.be/2520y5ad1GQ?si=SdiSYz73b_adXCop"],
          ["Sawan me", "https://youtu.be/uFsV0ieoU-w?si=eDKvyjKZ79c8-ZJA"]]
-
-contact_dict = {
-    "shama khala": "+91 7985799968",
-    "kullu": "+91 8881727388",
-    "khala": "+91 8382811207",
-    "nani": "+91 7800887732",
-    "sadiq": "+91 8423362828",
-    "yunus": "+91 8004357524"
-}
