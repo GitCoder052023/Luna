@@ -1,6 +1,6 @@
 # Luna: Your Personal AI Assistant
 
-# Description
+## Description
 Luna is a versatile AI assistant designed to make your life easier by automating tasks, providing information, and managing your digital life. She can respond to your voice commands to perform a wide range of actions, including:
 
 - Opening websites and applications
@@ -16,7 +16,7 @@ Luna is a versatile AI assistant designed to make your life easier by automating
 - Sending WhatsApp messages
 - Scheduling tasks
 
- # Basic Structure
+ ## Basic Structure
 
  The code is organized into several modules:
 
@@ -30,7 +30,7 @@ Luna is a versatile AI assistant designed to make your life easier by automating
 - SendWhatMessage.py: Enables sending WhatsApp messages.
 - scheduler.py: Handles task scheduling.
 
- # Key Features
+ ## Key Features
 
 - Voice-controlled interface: Interact with Luna using natural language commands.
 - Wide range of functionalities: Perform various tasks, from basic information retrieval to managing your computer.
@@ -42,7 +42,7 @@ Luna is a versatile AI assistant designed to make your life easier by automating
 
 # Setup
 
-# Setup API keys
+## Setup API keys
 
 
 Here are the instructions for setting up the API keys required for Luna:
@@ -93,7 +93,7 @@ Add Your API Key to the Code:
 - Open audio processing.py file.
 - Paste the copied API key into the **REPLACE WITH YOUR OWN ASSEMBLY AI API KEY**.
 
-# Setting up required libraries
+## Setting up required libraries
 
 1. Install the required libraries:
    ```bash
@@ -114,7 +114,7 @@ Add Your API Key to the Code:
 # Usage
 Speak a command to Luna, such as "Open YouTube" or "What's the weather today?" Luna will process your query and perform the requested action or provide a response.
 
-## Installation
+# Installation
 
 1. Clone the repository
    ```bash
