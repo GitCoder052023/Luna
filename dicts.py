@@ -23,3 +23,5 @@ contact_dict = {
     "sadiq": "+91 8423362828",
     "yunus": "+91 8004357524"
 }
+
+key = "REPLACE WITH YOUR OWN GEMINI API KEY"
