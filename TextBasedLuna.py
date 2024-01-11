@@ -1,7 +1,8 @@
 import google.generativeai as genai
 from dicts import key
 
-def Activate_KiaraTLDR():
+
+def Activate_LunaTXT():
     genai.configure(api_key=key)
     model = genai.GenerativeModel('gemini-pro')
     messages = []
