@@ -42,7 +42,7 @@ Luna is a versatile AI assistant designed to make your life easier by automating
 
 # Setup
 
-## Setup API keys
+## Setup API keys And Passwords
 
 
 Here are the instructions for setting up the API keys required for Luna:
@@ -81,7 +81,6 @@ Add Your API Key to the Code:
 - Enter your email address, password, and other required information.
 - Click on the "Create Account" button.
 
-  
 2. Obtain Your API Key:
 
 - Once you've logged in, you'll be taken to your dashboard.
@@ -92,6 +91,13 @@ Add Your API Key to the Code:
 
 - Open audio processing.py file.
 - Paste the copied API key into the **REPLACE WITH YOUR OWN ASSEMBLY AI API KEY**.
+
+## Create App password for gmail
+
+- To generate app password you need to open your gmail and click on your "profile button"
+- And then click on "manage your google account" button and make sure that you have already doned "2 step varification"
+- And then search for "app password" in search box.
+- And then create a random name for your app passwored for example "Python", and then copy the app passwored provided by google and paste it in dicts.py
 
 ## Setting up required libraries
 
