@@ -103,7 +103,7 @@ Add Your API Key to the Code:
 
 1. Install the required libraries:
    ```bash
-   pip install pyttsx3 webbrowser datetime pywhatkit smtplib newsapi-python pywhatkit requests google-generativeai
+   pip install pyttsx3 webbrowser datetime pywhatkit smtplib newsapi-python pywhatkit requests google-generativeai pyaudio pyautogui
    ```
  
 2. Make changes file named dicts.py and define the following variables
