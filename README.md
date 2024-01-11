@@ -92,7 +92,7 @@ Add Your API Key to the Code:
 - Open audio processing.py file.
 - Paste the copied API key into the **REPLACE WITH YOUR OWN ASSEMBLY AI API KEY**.
 
-## Create App password for gmail
+**Create App password for gmail**
 
 - To generate app password you need to open your gmail and click on your "profile button"
 - And then click on "manage your google account" button and make sure that you have already doned "2 step varification"
