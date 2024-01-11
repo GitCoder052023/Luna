@@ -4,12 +4,12 @@ import time
 
 # Define the dictionary
 contact_dict = {
-    "shama": "+91 7985799968",
-    "kulsoom": "+91 8881727388",
-    "khala": "+91 8382811207",
-    "nani": "+91 7800887732",
-    "sadiq": "+91 8423362828",
-    "yunus": "+91 8004357524"
+    "Person 1": "+91 12355545414", # Replace with your own numbers and names
+    "Person 2": "+91 87691573512", # Replace with your own numbers and names
+    "Person 3": "+91 78203165008", # Replace with your own numbers and names
+    "Person 4": "+91 72064089603", # Replace with your own numbers and names
+    "Person 5": "+91 78013548920", # Replace with your own numbers and names
+    "Person 6": "+91 796135870355" # Replace with your own numbers and names
 }
 
 
