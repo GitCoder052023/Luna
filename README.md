@@ -118,7 +118,7 @@ Add Your API Key to the Code:
    ```
 
 # Usage
-Speak a command to Luna, such as "Open YouTube" or "What's the weather today?" Luna will process your query and perform the requested action or provide a response.
+Speak a command to Luna, such as "Introduce Youself" or "Luna Please send whatsapp message" Luna will process your query and perform the requested action or provide a response.
 
 # Installation
 
