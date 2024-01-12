@@ -14,6 +14,7 @@ def recognize_audio(duration, threshhold=250):
         with sr.Microphone() as source:
             print("Listening...")
             audio = r.record(source, duration=duration)
+            print("Recognizing...")
 
         # write audio to a mp3 file
         with open("hello.mp3", "wb") as f:
