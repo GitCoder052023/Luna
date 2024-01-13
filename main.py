@@ -13,6 +13,7 @@ from AutomateFuctions import DesktopAssistant
 from SendWhatMessage import *
 from scheduler import task_scheduler
 from TextBasedLuna import Activate_LunaTXT
+from Vision import Vision
 
 AF = DesktopAssistant()
 stop_commands = stop_commands
@@ -63,7 +64,8 @@ if model == "LunaVOC":
                         "Sir, I am able to do many tasks like Opening websites, playing song, sending gmail,"
                         "telling time, answering your questions, performing YouTube search, etc"
                         "But sir,"
-                        "all these tasks are personal tasks. not only these tasks but I am able to do local things on your "
+                        "all these tasks are personal tasks. not only these tasks but I am able to do local things on "
+                        "your"
                         "computer"
                         " which can "
                         "you think."
@@ -73,6 +75,18 @@ if model == "LunaVOC":
                         " additional"
                         "features in me")
                     engine.runAndWait()
+
+                elif "about your updates" in query.lower():
+                    engine.say("Sir, currently I am updated with these 2 new features which, 1st is Text based version"
+                               "of me, and 2nd is vision feature of me. Sir the 1st feature of me allows you to chat"
+                               "with me on text, this feature is added in me to maintain your privacy, but sir in text "
+                               "model you can only ask questions, You don't have a access of my other capabilities. And"
+                               "sir the second feature of me is vision capability is added in me, this capability "
+                               "allows"
+                               "me to see the things and then answer the questions related to the things.")
+
+                elif "start your vision" in query.lower():
+                    Vision()
 
                 for site in sites:
                     if f"Open {site[0]}".lower() in query.lower():
