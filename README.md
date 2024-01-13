@@ -143,7 +143,7 @@ So what are you waiting for? Start chatting with Luna today and experience the m
 ## Update 1.2
 **Luna’s Vision Capabilities: The Biggest Update Release Yet!**
 
-We’re thrilled to announce that Luna, our AI-powered assistant, has been updated with vision capabilities. With this latest update, Luna can now see things and answer questions. This means you can now enjoy Luna’s vision capabilities to solve your homework questions, recognize things, and much more.
+I am thrilled to announce that Luna, our AI-powered assistant, has been updated with vision capabilities. With this latest update, Luna can now see things and answer questions. This means you can now enjoy Luna’s vision capabilities to solve your homework questions, recognize things, and much more.
 
 So what are you waiting for? Try out Luna’s vision capabilities today and see the difference for yourself!
 
