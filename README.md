@@ -15,6 +15,7 @@ Luna is a versatile AI assistant designed to make your life easier by automating
 - Automating desktop tasks
 - Sending WhatsApp messages
 - Scheduling tasks
+- Computer Vision
 
  ## Basic Structure
 
@@ -118,7 +119,7 @@ Add Your API Key to the Code:
    ```
 
 # Usage
-Speak a command to Luna, such as "Introduce Youself" or "Luna Please send whatsapp message" Luna will process your query and perform the requested action or provide a response.
+Speak a command to Luna, such as "Introduce Youself", "Luna Please send whatsapp message", "Tell me about your updates", "Start your Vision" Luna will process your query and perform the requested action or provide a response.
 
 # Installation
 
