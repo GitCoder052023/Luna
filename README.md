@@ -123,15 +123,10 @@ Speak a command to Luna, such as "Introduce Youself", "Luna Please send whatsapp
 
 # Installation
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/GitCoder052023/Luna.git
-   ```
-
-2. Install required libraries
-   ```bash
-   npm install
-   ```
+Clone the repository
+```bash
+git clone https://github.com/GitCoder052023/Luna.git
+```
 # Updates in Luna
 ## Update 1.1
 Luna has been updated with a new text model called LunaTXT. This new model will make chatting with Luna even more enjoyable and engaging than before! 😍
