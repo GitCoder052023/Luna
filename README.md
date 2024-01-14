@@ -15,6 +15,7 @@ Luna is a versatile AI assistant designed to make your life easier by automating
 - Automating desktop tasks
 - Sending WhatsApp messages
 - Scheduling tasks
+- Computer Vision
 
  ## Basic Structure
 
@@ -118,7 +119,7 @@ Add Your API Key to the Code:
    ```
 
 # Usage
-Speak a command to Luna, such as "Introduce Youself" or "Luna Please send whatsapp message" Luna will process your query and perform the requested action or provide a response.
+Speak a command to Luna, such as "Introduce Youself", "Luna Please send whatsapp message", "Tell me about your updates", "Start your Vision" Luna will process your query and perform the requested action or provide a response.
 
 # Installation
 
@@ -131,6 +132,22 @@ Speak a command to Luna, such as "Introduce Youself" or "Luna Please send whatsa
    ```bash
    npm install
    ```
+# Updates in Luna
+## Update 1.1
+Luna has been updated with a new text model called LunaTXT. This new model will make chatting with Luna even more enjoyable and engaging than before! 😍
+
+With LunaTXT, you can now chat with Luna with complete privacy in public places. This new model has been added to ensure that your conversations with Luna are always secure and confidential. 🔒
+
+So what are you waiting for? Start chatting with Luna today and experience the magic of LunaTXT! 🌟
+
+## Update 1.2
+**Luna’s Vision Capabilities: The Biggest Update Release Yet!**
+
+I am thrilled to announce that Luna, our AI-powered assistant, has been updated with vision capabilities. With this latest update, Luna can now see things and answer questions. This means you can now enjoy Luna’s vision capabilities to solve your homework questions, recognize things, and much more.
+
+So what are you waiting for? Try out Luna’s vision capabilities today and see the difference for yourself!
+
+Please note that Luna’s vision capabilities are still in beta, and we’re constantly working to improve them. If you have any feedback or suggestions, please don’t hesitate to reach out to me.
 
 # Note
 **Luna is currently under development, so expect some limitations and potential errors.
