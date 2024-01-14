@@ -104,7 +104,7 @@ Add Your API Key to the Code:
 
 1. Install the required libraries:
    ```bash
-   pip install pyttsx3 pywhatkit smtplib newsapi-python requests google-generativeai pyaudio PyAutoGUI
+   pip install pyttsx3 pywhatkit secure-smtplib newsapi-python requests google-generativeai pyaudio PyAutoGUI
    ```
  
 2. Make changes file named dicts.py and define the following variables
