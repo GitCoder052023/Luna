@@ -53,7 +53,7 @@ def Vision():
 
             Input = recognize_audio(10, 20)
 
-        if Input.lower() == 'q':
+        if Input.lower() == 'stop':
             break
 
         # Generate response from Gemini Pro Vision
