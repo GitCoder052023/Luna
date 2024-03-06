@@ -1,6 +1,9 @@
+import os
+import sys
 import flet as ft
 import google.generativeai as genai
 import warnings
+import pywhatkit
 from process_query import query_processer
 from audio_processing import recognize_audio
 import pyttsx3
@@ -8,18 +11,13 @@ import webbrowser
 import datetime
 from Weather import get_weather
 from news import get_news
-from process_query import write_mail
-import smtplib
 from dicts import *
 from os_functions import *
 from AutomateFuctions import DesktopAssistant
-from SendWhatMessage import *
 
 warnings.filterwarnings("ignore")
 AF = DesktopAssistant()
 stop_commands = stop_commands
-sender_email = sender_email
-sender_password = sender_password
 sites = sites
 songs = songs
 engine = pyttsx3.init()
@@ -203,7 +201,6 @@ try:
 
 
     async def main(page: ft.Page):
-
         page.horizontal_alignment = ft.CrossAxisAlignment.CENTER
         page.appbar = ft.AppBar(title=ft.Text("Hello sir, How can I help you today?"), center_title=True)
 
@@ -276,10 +273,12 @@ try:
 
                         elif "weather" in query.lower():
                             engine.say("sir, this is the report of today's weather")
+                            engine.runAndWait()
                             get_weather()
 
                         elif "search on youtube" in query.lower():
                             engine.say("sir, this is the result for your search")
+                            engine.runAndWait()
                             # Remove text before and including "search on YouTube"
                             query = query.split("search on youtube", 1)[-1].strip()
 
@@ -416,93 +415,6 @@ try:
 
                             AF.maximize_current_window()
 
-                        elif "send whatsapp message" in query.lower():
-                            engine.say("sure sir, please enter the name of person")
-                            engine.runAndWait()
-
-                            name = ft.TextField(label="Name of person")
-
-                            engine.say("sure sir, now please speak the message you want to send")
-                            engine.runAndWait()
-
-                            WM = recognize_audio(20, 50)
-
-                            engine.say("sure sir, now I am sending whatsapp message")
-                            engine.runAndWait()
-
-                            send_whatsapp_message(name, WM)
-
-
-                        elif "send mail" in query.lower():
-                            engine.say("Sir, do you want to write gmail using artificial intelligence?")
-                            engine.runAndWait()
-
-                            wish = recognize_audio(3, 100)
-
-                            if "yes" in wish.lower():
-                                engine.say("Sir, please give me the topic of gmail")
-                                engine.runAndWait()
-
-                                topic = recognize_audio(10, 100)
-
-                                engine.say("Writing email sir...")
-                                engine.runAndWait()
-
-                                mail = write_mail(topic)
-                                ft.Text(value="Mail: " + mail)
-
-                                sendMail = input("Sir, do you want to send this email [Y/n]: ")
-
-                                if sendMail == "Y":
-                                    smtp_server = smtplib.SMTP('smtp.gmail.com', 587)
-                                    smtp_server.starttls()
-                                    smtp_server.login(sender_email, sender_password)
-
-                                    # Compose the email
-                                    from_address = sender_email
-                                    to_address = input("Sir, please enter recipient email: ")
-                                    subject = input("Sir, please enter the subject of your email: ")
-                                    body = mail
-
-                                    email_message = f'Subject: {subject}\n\n{body}'
-
-                                    engine.say("sending email sir to", to_address)
-                                    engine.runAndWait()
-                                    # Send the email
-                                    smtp_server.sendmail(from_address, to_address, email_message)
-
-                                    # Close the SMTP server connection
-                                    smtp_server.quit()
-
-                                    engine.say("Sir Email sent successfully!")
-                                    engine.runAndWait()
-
-                                if sendMail == "n":
-                                    engine.say("Sorry sir, you can write your mail yourself")
-                                    engine.runAndWait()
-
-                                    smtp_server = smtplib.SMTP('smtp.gmail.com', 587)
-                                    smtp_server.starttls()
-                                    smtp_server.login(sender_email, sender_password)
-
-                                    # Compose the email
-                                    from_address = sender_email
-                                    to_address = input("Sir, please enter recipient email: ")
-                                    subject = input("Sir, please enter the subject of your email: ")
-                                    body = input("Write your email: ")
-
-                                    email_message = f'Subject: {subject}\n\n{body}'
-
-                                    engine.say("sending email sir to", to_address)
-                                    engine.runAndWait()
-                                    # Send the email
-                                    smtp_server.sendmail(from_address, to_address, email_message)
-
-                                    # Close the SMTP server connection
-                                    smtp_server.quit()
-
-                                    engine.say("Sir Email sent successfully!")
-                                    engine.runAndWait()
 
                         else:
                             if not content_generated:
@@ -529,16 +441,6 @@ try:
                 except:
                     engine.say("")
                     engine.runAndWait()
-
-        async def handle_state_change(e):
-            print(f"State Changed: {e.data}")
-
-        audio_rec = ft.AudioRecorder(
-            audio_encoder=ft.AudioEncoder.WAV,
-            on_state_changed=handle_state_change,
-        )
-        page.overlay.append(audio_rec)
-        await page.update_async()
 
         # **Modified section for larger icon button**
         large_icon_button = ft.IconButton(
