@@ -104,7 +104,7 @@ Add Your API Key to the Code:
 
 1. Install the required libraries:
    ```bash
-   pip install pyttsx3==2.71 webbrowser datetime pywhatkit smtplib newsapi-python requests google-generativeai pyaudio PyAutoGUI
+   pip install pyttsx3 pywhatkit secure-smtplib newsapi-python requests google-generativeai pyaudio PyAutoGUI
    ```
  
 2. Make changes file named dicts.py and define the following variables
@@ -123,15 +123,10 @@ Speak a command to Luna, such as "Introduce Youself", "Luna Please send whatsapp
 
 # Installation
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/GitCoder052023/Luna.git
-   ```
-
-2. Install required libraries
-   ```bash
-   npm install
-   ```
+Clone the repository
+```bash
+git clone https://github.com/GitCoder052023/Luna.git
+```
 # Updates in Luna
 ## Update 1.1
 Luna has been updated with a new text model called LunaTXT. This new model will make chatting with Luna even more enjoyable and engaging than before! 😍
