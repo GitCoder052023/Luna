@@ -7,7 +7,7 @@ def query_processer(query_source):
     while True:
         query = query_source
 
-        genai.configure(api_key="REPLACE WITH YOUR OWN API KEY")
+        genai.configure(api_key="AIzaSyBoxqElIKXzz7IxkiEllxyDQlYbasCkbTc")
 
         model = genai.GenerativeModel('gemini-pro')
         print("Generating content for you...")
