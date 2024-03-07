@@ -1,5 +1,3 @@
-import os
-import sys
 import flet as ft
 import google.generativeai as genai
 import warnings
@@ -11,7 +9,7 @@ import webbrowser
 import datetime
 from Weather import get_weather
 from news import get_news
-from dicts import *
+from configs.dicts import *
 from os_functions import *
 from AutomateFuctions import DesktopAssistant
 
