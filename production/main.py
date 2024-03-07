@@ -9,7 +9,7 @@ import webbrowser
 import datetime
 from Weather import get_weather
 from news import get_news
-from configs.dicts import *
+from dicts import *
 from os_functions import *
 from AutomateFuctions import DesktopAssistant
 
@@ -490,3 +490,5 @@ try:
 
 except:
     print("")
+
+# pyinstaller --name Luna --onefile --windowed --icon=logo.ico main.py
