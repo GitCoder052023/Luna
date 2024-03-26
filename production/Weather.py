@@ -5,7 +5,7 @@ engine = pyttsx3.init()
 
 
 def get_weather():
-    api_key = "075c1cf51eade85b0aa928e0c69ea5ab"  # Replace with your actual API key
+    api_key = "REPLACE WITH YOUR OWN API KEY"  # Replace with your actual API key
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     city_name = "Lucknow"
 

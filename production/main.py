@@ -1,8 +1,8 @@
 import flet as ft
-import google.generativeai as genai
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_core.messages import HumanMessage, SystemMessage
 import warnings
 import pywhatkit
-from process_query import query_processer
 from audio_processing import recognize_audio
 import pyttsx3
 import webbrowser
@@ -12,6 +12,26 @@ from news import get_news
 from dicts import *
 from os_functions import *
 from AutomateFuctions import DesktopAssistant
+import google.generativeai as genai
+
+key = "REPLACE WITH YOUR OWN GEMINI API KEY"
+model = ChatGoogleGenerativeAI(model="gemini-pro", convert_system_message_to_human=True,
+                               google_api_key=key, temperature=1.0)
+
+
+def query_processer(query_source):
+    user_query = query_source
+    response = model(
+        [
+            SystemMessage(
+                content=f"""You are a virtual desktop assistant and your name is "Luna" and you are developed by "Hamdan", Now anser this quesion and if this question asks about you then introduce your self as "Luna": {user_query}"""
+            ),
+            HumanMessage(content=user_query),
+        ]
+    )
+
+    return response.content
+
 
 warnings.filterwarnings("ignore")
 AF = DesktopAssistant()
@@ -97,7 +117,7 @@ try:
                 temp = new_message.value
                 new_message.value = ""
                 new_message.focus()
-                res = query_processer(temp)
+                res = model(temp)
                 if len(res) > 220:  # adjust the maximum length as needed
                     res = '\n'.join([res[i:i + 220]
                                      for i in range(0, len(res), 220)])
@@ -105,7 +125,7 @@ try:
                     Message("Luna", res, message_type="chat_message"))
                 page.update()
 
-        def query_processer(query_source):
+        def model(query_source):
             messages = []
 
             while True:
@@ -237,7 +257,6 @@ try:
                                 " additional"
                                 "features in me")
                             engine.runAndWait()
-
 
                         for site in sites:
                             if f"Open {site[0]}".lower() in query.lower():
