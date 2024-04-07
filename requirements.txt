@@ -1,0 +1,13 @@
+pywhatkit~=5.4
+pyttsx3~=2.90
+rich~=13.7.1
+requests~=2.31.0
+google~=3.0.0
+assemblyai~=0.23.1
+PyAutoGUI~=0.9.54
+opencv-python~=4.9.0.80
+pillow~=10.2.0
+ipython~=8.23.0
+langchain-google-genai
+flet~=0.21.1
+ollama~=0.1.8
