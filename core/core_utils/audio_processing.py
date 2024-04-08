@@ -1,8 +1,11 @@
 import speech_recognition as sr
 import os
 import assemblyai as aai
+import os
+from dotenv import load_dotenv, dotenv_values
 
-aai.settings.api_key = "REPLACE WITH YOUR OWN ACTUAL API KEY"
+load_dotenv()
+aai.settings.api_key = os.getenv("Assembly_API_key")
 transcriber = aai.Transcriber()
 
 

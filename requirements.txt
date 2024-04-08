@@ -11,3 +11,5 @@ ipython~=8.23.0
 langchain-google-genai
 flet~=0.21.1
 ollama~=0.1.8
+questionary~=2.0.1
+python-dotenv~=1.0.1

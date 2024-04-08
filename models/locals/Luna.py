@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add parent directory to Python path
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
 import pywhatkit
 from utils.process_query import query_processer
 from utils.audio_processing import recognize_audio
@@ -9,12 +15,15 @@ from utils.news import get_news
 from utils.dicts import *
 from utils.os_functions import *
 from utils.AutomateFuctions import DesktopAssistant
+import os
+from dotenv import load_dotenv, dotenv_values
 
 AF = DesktopAssistant()
 stop_commands = stop_commands
 sites = sites
 apps = apps
 songs = songs
+load_dotenv()
 
 engine = pyttsx3.init()
 
@@ -91,7 +100,7 @@ def luna(e):
                 elif "today's news" in query.lower():
                     engine.say("sir, these are some top headlines of today")
                     engine.runAndWait()
-                    get_news(api_key='REPLACE WITH YOUR OWN API KEY', category='general', country='in')
+                    get_news(api_key=os.getenv("NewsAPI_key"), category='general', country='in')
 
                 elif "what is my current working directory" in query.lower():
                     cwd = get_current_dir()
@@ -115,15 +124,6 @@ def luna(e):
 
                     text_to_write = query.lower().split("write this text", 1)[-1].strip()
                     AF.type_text(text_to_write)
-
-                elif "list my directory" in query.lower():
-                    ld = list_directory_contents()
-
-                    engine.say("sir, this is the list of your directory contents")
-                    engine.runAndWait()
-
-                    engine.say(ld)
-                    engine.runAndWait()
 
                 elif "create a new file" in query.lower():
                     engine.say("sir, please tell me the name for your file")

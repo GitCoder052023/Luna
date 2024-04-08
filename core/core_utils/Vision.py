@@ -6,9 +6,11 @@ from IPython.display import Markdown
 import PIL.Image
 from core.core_utils.audio_processing import recognize_audio
 import pyttsx3
-from core.core_utils.dicts import key
+import os
+from dotenv import load_dotenv, dotenv_values
 
 engine = pyttsx3.init()
+load_dotenv()
 
 
 def to_markdown(text):
@@ -16,7 +18,7 @@ def to_markdown(text):
     return Markdown(textwrap.indent(text, '> ', predicate=lambda _: True))
 
 
-genai.configure(api_key=key)
+genai.configure(api_key=os.getenv("Gemini_API_key"))
 model = genai.GenerativeModel('gemini-pro-vision')
 
 

@@ -23,5 +23,3 @@ contact_dict = {
     "Contact 5": "+91 9999999995",
     "Contact 6": "+91 9999999996"
 }
-
-key = "REPLACE WITH YOUR OWN GEMINI API KEY"

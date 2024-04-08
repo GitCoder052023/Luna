@@ -14,6 +14,8 @@ from core_utils.SendWhatMessage import *
 from core_utils.scheduler import task_scheduler
 from core_utils.TextBasedLuna import Activate_LunaTXT
 from core_utils.Vision import Vision
+import os
+from dotenv import load_dotenv, dotenv_values
 
 AF = DesktopAssistant()
 stop_commands = stop_commands
@@ -21,6 +23,7 @@ sender_email = sender_email
 sender_password = sender_password
 sites = sites
 songs = songs
+load_dotenv()
 
 engine = pyttsx3.init()
 
@@ -136,7 +139,7 @@ if model == "LunaVOC":
                 elif "today news" in query.lower():
                     engine.say("sir, these are some top headlines of today")
                     engine.runAndWait()
-                    get_news(api_key='REPLACE WITH YOUR OWN API KEY', category='general', country='in')
+                    get_news(api_key=os.getenv("NewsAPI_key"), category='general', country='in')
 
                 elif "what is my current working directory" in query.lower():
                     cwd = get_current_dir()

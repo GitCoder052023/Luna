@@ -1,10 +1,13 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.messages import HumanMessage, SystemMessage
 import warnings
+import os
+from dotenv import load_dotenv, dotenv_values
 
 warnings.filterwarnings("ignore")
+load_dotenv()
 
-key = "REPLACE WITH YOUR OWN ACTUAL API KEY"
+key = os.getenv("Gemini_API_key")
 model = ChatGoogleGenerativeAI(model="gemini-pro", convert_system_message_to_human=True,
                                google_api_key=key, temperature=1.0)
 

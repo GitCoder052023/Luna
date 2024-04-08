@@ -60,5 +60,3 @@ songs = [["Dil hai mushkil", "https://youtu.be/6FURuLYrR_Q?si=kkSJFDoutMNPaNEu"]
          ["Nusrat fateh ali khan qauwalli", "https://youtu.be/FIzjqBtb_xo?si=-EOjxGdcld2H6Vkl"],
          ["Yar na miley", "https://youtu.be/2520y5ad1GQ?si=SdiSYz73b_adXCop"],
          ["Sawan me", "https://youtu.be/uFsV0ieoU-w?si=eDKvyjKZ79c8-ZJA"]]
-
-key = "REPLACE WITH YOUR OWN ACTUAL API KEY"

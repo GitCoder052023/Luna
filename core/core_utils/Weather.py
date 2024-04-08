@@ -1,11 +1,14 @@
 import requests
 import pyttsx3
+import os
+from dotenv import load_dotenv, dotenv_values
 
 engine = pyttsx3.init()
+load_dotenv()
 
 
 def get_weather():
-    api_key = "REPLACE WITH YOUR OWN API KEY"  # Replace with your actual API key
+    api_key = os.getenv("OpenWeatherMap_API_key")
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     city_name = "Lucknow"
 
