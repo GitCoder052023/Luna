@@ -1,6 +1,5 @@
 import sys
 import os
-
 # Add parent directory to Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 import pyttsx3
@@ -28,10 +27,10 @@ engine.setProperty('voice', 'HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices
 
 content_generated = False
 
-console.print("WARNING: Luna is currently under development,"
-              "may be she can give error or some "
-              "stupid behaviour while performing some tasks and she can make mistakes. Consider checking important "
-              "information.\n", style="bold red")
+console.print("WARNING: Please be advised that Luna is presently undergoing development, and you are utilizing Luna's "
+              "BETA version. It is possible that errors or unexpected behavior may occur during task execution, "
+              "and mistakes may be made. We strongly recommend verifying critical information. Thank you for your "
+              "understanding and cooperation in this developmental phase.\n", style="bold red")
 
 method = questionary.select(
     message="Please select your interaction method with Luna from below:",
@@ -43,3 +42,6 @@ method = questionary.select(
 
 if method == "Cloud":
     luna(None)
+
+else:
+    console.print("Coming soon!!", style="bold cyan")

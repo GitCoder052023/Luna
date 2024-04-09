@@ -55,8 +55,6 @@ Stay informed with Luna's AI Companion by accessing the following information:
 
 - News headlines
 
-- Email capabilities, including AI-generated content
-
 ### Multimedia Management
 
 Luna's AI Companion enables you to manage your multimedia content with ease:
@@ -96,30 +94,17 @@ git clone https://github.com/GitCoder052023/Luna.git
 2. **Install Dependencies**: Navigate to the Luna directory and install the required dependencies.
 ```
 cd Luna
-pip install -r requirements.tx
+pip install -r requirements.txt
 ```
 
-3. **Run Luna**: Start Luna and begin automating your tasks.
+3. **Setup third party API keys**:  Navigate to the .env file and replace all the placeholders with your actual API key
+
+4. **Run Luna**: Start Luna and begin automating your tasks.
 
 ```
+cd .TUI
 python main.py
 ```
-
-## Configuration
-
-Luna's AI Companion can be customized to suit your preferences. You can modify the configuration file (config.yaml) to change settings such as the wake word, voice recognition engine, and language.
-
-  
-
-Configuration Options
-
-`wake_word`: The word or phrase that will trigger Luna to start listening.
-
-`voice_engine`: The voice recognition engine to use (e.g., `pocketsphinx`, `google_speech`, `wit_ai`).
-
-`language`: The language to use for voice recognition and text-to-speech.
-
-`api_keys`: API keys for third-party services (e.g., weather, news, email).
 
 ## Contributing
 
