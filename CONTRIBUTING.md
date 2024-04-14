@@ -5,7 +5,7 @@ Thanks for your interest in contributing to Luna's AI Companion! We welcome any 
 ## Table of Contents
 
 
-- [Setting up the Development Environment](#Setting up the Development Environment)
+- [Setting up the Development Environment](#Setting-up-the-Development-Environment)
 - [Code Style](#code-style)
 - [Issue Reporting](#issue-reporting)
 - [Pull Requests](#pull-requests)
@@ -28,7 +28,7 @@ git clone https://github.com/GitCoder052023/Luna.git
 3. **Install Dependencies**: Navigate to the Luna directory and install the required dependencies.
 
 ```
-cd Luna pip install -r requirements.txt
+cd Luna 
 ```
 
 ```
