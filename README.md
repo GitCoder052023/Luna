@@ -91,7 +91,7 @@ To get started with Luna's AI Companion, follow these steps:
 git clone https://github.com/GitCoder052023/Luna.git
 ```
 
-2. **Install Dependencies**: Navigate to the Luna directory and install the required dependencies.
+2. **Install Dependencies**: Navigate to the Luna directory and install the required dependencies
 ```
 cd Luna
 pip install -r requirements.txt
