@@ -28,10 +28,111 @@ This document provides an overview of the architecture for the project Luna, det
 
 - **Weather.py**: Provides functionalities related to weather information retrieval. This may include fetching current weather conditions, forecasts, and weather-related news.
 
-## Automation and Utility
+## Visual Representation of Project structure
 
-- **AutomateFuctions.py**: A collection of automated functions that could range from web scraping, automated form submission, or any repetitive tasks that have been automated for efficiency.
+```Bash
+C:.
+│   .env
+│   .gitattributes
+│   .gitignore
+│   .google-cookie
+│   architecture.md
+│   CODE_OF_CONDUCT.md
+│   CONTRIBUTING.md
+│   examples.md
+│   License.md
+│   output.txt
+│   qodana.yaml
+│   README.md
+│   requirements.txt
+│   todos.txt
+│   
+├───.GUI
+│   │   main.py
+├───.TUI
+│   │   main.py
+│                   
+├───agents
+│       main.py
+│       
+├───assets
+│       logo.ico
+│       logo.jpeg
+│       qodana.yaml
+│       
+├───core
+│   │   main.py
+│   │   
+│   └───core_utils
+│           audio_processing.py
+│           AutomateFuctions.py
+│           dicts.py
+│           news.py
+│           os_functions.py
+│           process_query.py
+│           scheduler.py
+│           SendWhatMessage.py
+│           TextBasedLuna.py
+│           Vision.py
+│           Weather.py
+│           
+├───Installers - (BETA)
+│       Luna - BETA.exe
+│       
+├───models
+│   ├───locals
+│   │   │   Luna.py
+│   │           
+│   └───Ollama
+│       ├───large_models
+│       ├───medium_models
+│       │   ├───llama
+│       │   │   ├───codellama
+│       │   │   │       codellama.py
+│       │   │   │       codellama34b.py
+│       │   │   │       codellama70b.py
+│       │   │   │       
+│       │   │   └───llama2
+│       │   │       │   llama2.py
+│       │   │       │   llama2_70b.py
+│       │   │       │   
+│       │   │       └───__pycache__
+│       │   │               llama2.cpython-310.pyc
+│       │   │               llama2_70b.cpython-310.pyc
+│       │   │               
+│       │   └───mistral
+│       │       │   mistral.py
+│       │       │   
+│       │       └───__pycache__
+│       │               mistral.cpython-310.pyc
+│       │               
+│       └───small_models
+│           ├───gemma_models
+│           │   │   gemma.py
+│           │   │   gemma2b.py
+│           │   │   gemma7b.py
+│           │   │   
+│           │   └───__pycache__
+│           │           gemma.cpython-310.pyc
+│           │           gemma2b.cpython-310.pyc
+│           │           gemma7b.cpython-310.pyc
+│           │           
+│           └───llama_models
+│               ├───codellama
+│               │       codellama13b.py
+│               │       codellama7b.py
+│               │       
+│               └───llama2
+│                       llama2_13b.py
+│                       llama2_7b.py
+│                       
+├───utils
+│   │   audio_processing.py
+│   │   AutomateFuctions.py
+│   │   dicts.py
+│   │   news.py
+│   │   os_functions.py
+│   │   process_query.py
+│   │   Weather.py
 
-## Conclusion
-
-This architecture document outlines the high-level structure of the project, detailing the purpose and functionality of each component. The project is designed to be modular, with each file handling a specific aspect of the application's overall functionality. This modular design facilitates easy maintenance and scalability of the application.
+```
